@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revised Modal Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="cta-section">
+            <button class="btn-main open-modal-btn">Click to Proceed</button>
+        </section>
+
+        <div class="modal-overlay hide">
+            <div class="modal-content-wrapper">
+                <header class="modal-header">
+                    <h2>Welcome!</h2>
+                    <button class="btn-close close-modal-btn">&times;</button>
+                </header>
+                <div class="modal-body">
+                    <p>Please provide your details below:</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" placeholder="Enter your name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="Enter your email" required />
+                        </div>
+                        <button type="button" class="btn-main submit-btn">Submit</button>
+                        <p id="success-message" class="success-message hide">Thank you for your submission!</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

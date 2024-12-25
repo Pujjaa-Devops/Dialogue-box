@@ -21,16 +21,17 @@ function handleSubmit() {
     if (nameInput.value === '' || emailInput.value === '') {
         alert("Please fill out all fields."); 
     } else {
-      
+        // Display success message
         successMessage.classList.remove("hide");
         successMessage.innerText = `Thank you, ${nameInput.value}! Your email ${emailInput.value} has been submitted.`;
         
+
         nameInput.value = '';
         emailInput.value = '';
     }
 }
 
-
+// Event listeners
 openBtn.addEventListener("click", openModal);
 closeBtn.addEventListener("click", closeModal);
 submitBtn.addEventListener("click", handleSubmit);
